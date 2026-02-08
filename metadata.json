@@ -1,0 +1,7 @@
+{
+  "name": "Aadhaar Fraud Sentinel",
+  "description": "A sophisticated anomaly detection and fraud pattern finder for Aadhaar datasets, featuring AI-powered analysis and interactive data visualizations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

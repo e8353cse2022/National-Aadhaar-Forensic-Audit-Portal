@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIDAI | National Forensic Audit Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --uidai-blue: #005dab;
+            --uidai-light-blue: #0090da;
+            --gov-saffron: #ff9933;
+            --gov-green: #138808;
+            --portal-bg: #f8fafc;
+            --border-light: #e2e8f0;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--portal-bg);
+            background-image: radial-gradient(#e2e8f0 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            color: #1e293b;
+        }
+
+        .uidai-header-top {
+            background: #ffffff;
+            border-top: 4px solid var(--gov-saffron);
+            font-size: 11px;
+            padding: 8px 0;
+            color: #64748b;
+            border-bottom: 1px solid var(--border-light);
+            font-weight: 600;
+        }
+
+        .uidai-card {
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+
+        .uidai-button {
+            background-color: var(--uidai-blue);
+            color: white;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .uidai-button:hover {
+            background-color: var(--uidai-light-blue);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 144, 218, 0.25);
+        }
+
+        .uidai-button-outline {
+            border: 1.5px solid var(--uidai-blue);
+            color: var(--uidai-blue);
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .uidai-button-outline:hover {
+            background: rgba(0, 93, 171, 0.03);
+        }
+
+        .form-control-uidai {
+            border: 1.5px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px 16px;
+            width: 100%;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+
+        .form-control-uidai:focus {
+            border-color: var(--uidai-blue);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(0, 93, 171, 0.08);
+            background-color: #fff;
+        }
+
+        .uidai-tricolor {
+            height: 4px;
+            background: linear-gradient(to right, var(--gov-saffron) 33.33%, #fff 33.33%, #fff 66.66%, var(--gov-green) 66.66%);
+        }
+
+        .nav-link-active {
+            border-bottom: 3px solid var(--uidai-blue);
+            color: var(--uidai-blue);
+            font-weight: 700;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            75% { transform: translateX(4px); }
+        }
+        .animate-shake {
+            animation: shake 0.2s ease-in-out 0s 2;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
